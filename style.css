@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Danfo&family=Poetsen+One&display=swap');
+*{
+    padding:0;
+    margin:0;
+}
+.body{
+    background:url(HD-wallpaper-classic-snake-adventures-snake-game.jpg);
+    min-height:100vh;
+    background-size: 120% 115%;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+   
+    background: #87CEEB;
+    width:75vmin;
+    height: 77vmin;
+    border: 2px solid black;
+   
+    display:grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+.snake{
+    background-color:#e0be42;
+    border: 1px solid black;
+    border-radius:14px;
+}
+.head{
+   background-color:#d4b02e;
+   border: 1px solid black;
+   border-radius: 12px;
+   transform: scale(1.02);
+}
+.food{
+    transform:scale(0.9);
+    border:1px solid black;
+    background-color: brown;
+    border-radius:20px;
+}
+#score{
+    position:absolute;
+    top:20px;
+    right:40px;
+    font-size: 39px;
+    font-weight: bold;
+}
+.start{
+    font-family: "Poetsen One", sans-serif;
+    position:absolute;
+    left:20px;
+    top:25px;
+    font-size:40px;
+   
+}
